@@ -25,12 +25,7 @@ class Solution {
         }
     
         
-       boolean left= isSameTree(p.left, q.left);
-       boolean right= isSameTree(p.right, q.right);
-
-        if(left==true && right==true)
-        return true;
-        else
-        return false;
+   
+        return (isSameTree(p.left,q.left) && isSameTree(p.right,q.right));
     }
 }
